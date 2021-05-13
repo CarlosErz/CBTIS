@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/cbetis-715x402.jpg) no-repeat center center fixed;
+    background-size: cover;
+    animation: movimiento 10s infinite linear alternate;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #062d97;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+@keyframes movimiento {
+    from {
+        background-position: bottom left;
+    }
+    to {
+        background-position: top right;
+    }
+}
+
+.cod-container {
+    background: white;
+    width: 380px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.for-header {
+    background: #062d97;
+    text-align: center;
+    padding: 30px 0 40px;
+    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%);
+}
+
+.for-header h1 {
+    color: white;
+    font-weight: normal;
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+.for-header span {
+    color: #011030;
+    font-family: sans-serif;
+}
+
+.cod-form {
+    padding: 10px 40px 40px;
+}
+
+.form-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 32px;
+    overflow: hidden;
+    color: #062d97;
+    font-size: 17px;
+}
+
+.linea h3 {
+    position: relative;
+    display: inline-block;
+    color: #062d97;
+    padding: 0 10px;
+}
+
+.linea h3::after, h3::before {
+    position: relative;
+    content: '';
+    width: 100%;
+    height: 30px;
+    background: #062d97;
+    top: 0.5em;
+}
+
+input[type="submit"] {
+    background: none;
+    border: none;
+    position: relative;
+    left: 80%;
+    background: #032879;
+    color: white;
+    font-size: 12px;
+    padding: 7.4px 0;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    width: 50px;
+    right: 100px;
+}
+
+input[type="submit"]:hover {
+    background: #051f66;
+    color: white;
+}
+
+input[type="reset"] {
+    background: none;
+    border: none;
+    background: #032879;
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 60%;
+    font-size: 12px;
+    padding: 10px 0;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+input[type="reset"]:hover {
+    background: #051b58;
+    color: white;
+}
+
+/*
+input[type="radio"] {
+    display: none;
+}
+
+.cod-form .radio label {
+    color: #0774d9;
+    padding: 10px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0, 3s ease;
+    -o-transition: all 0, 3s ease;
+    transition: all 0, 3s ease;
+}
+
+.cod-form .radio label:hover {
+    background: rgba(0, 116, 217, 0.2);
+}
+
+.cod-form .radio label:before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #0774d9;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+}
+
+input[type="radio"]:checked+label {
+    padding: 5px 15px;
+    background: #0774d9;
+    border-radius: 2px;
+    color: white;
+}
+
+input[type="radio"]:checked+label::before {
+    display: none;
+}
+*/
+
+.radio h2 {
+    font-size: 15px;
+}
+
+.es {
+    font-size: 15px;
+}
+
+.col {
+    font-size: 15px;
+    top: 82%;
+    right: 50%;
+    position: absolute;
+}
+
+.gen {
+    font-size: 15px;
+}
+
+.name {
+    font-size: 15px;
+}
+
+.corr {
+    font-size: 15px;
+}
+
+.box {
+    position: absolute;
+    top: 86%;
+    right: 48%;
+    transform: translate(-0%, -0%);
+}
+
+.box select {
+    background: #01305c;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 3px 6px rgba(10, 2, 39, 0.568);
+    -webkit-appearance: button;
+    outline: none;
+}
+
+.box:before {
+    content: "\f358";
+    font-family: "Font Awesome 5 free";
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    line-height: 27px;
+    font-size: 20px;
+    background: #054e8a;
+    cursor: pointer;
+}
+
+.box:hover:before {
+    background: #0472ca;
+}
+
+@media screen and (max-width:680px) {
+    .col {
+        font-size: 15px;
+        top: 82%;
+        right: 50%;
+        position: absolute;
+    }
+    .box {
+        position: absolute;
+        top: 86%;
+        right: 48%;
+        transform: translate(-0%, -0%);
+    }
+}
+
+@media screen and (max-width:451px) {
+    .col {
+        font-size: 15px;
+        top: 82%;
+        right: 50%;
+        position: absolute;
+    }
+    .box {
+        position: absolute;
+        top: 86%;
+        right: 48%;
+        transform: translate(-0%, -0%);
+    }
+}
+
+input[type="text"] {
+    border: none;
+    height: 30px;
+    width: 100%;
+}

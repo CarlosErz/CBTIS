@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="icon" href="img/BlancoCbts.PNG" sizes="32x32s">
+    <title>Registro</title>
+  </head>
+  <body>
+      <div class="cod-container">
+          <div class="for-header">
+              <img src="img/BlancoCbts.PNG" alt="LogoCbts" width="90">
+              <h1>CBTIS <span>189</span></h1>
+          </div>
+          <div class="form-content">
+    <form action="" class="cod-form">
+        <div  class="form-title">
+            <h3 class="linea">Registro Cbtis 189</h3>
+
+        </div>
+        <div class="input-grupo">
+       <h2 class="name">Nombre completo:</h2> 
+        <input
+          type="text"
+          class="formulario__input"
+          name="usuario"
+          placeholder="Ricardo Anaya  "
+          id="nombre"
+        />
+        <h2 class="corr">Correo electronico:</h2>
+        <input
+          type="text"
+          class="formulario__input"
+          name="correo"
+          placeholder="eje:example@gmail.com"
+          id="correo"
+          />
+         <div class="radio">
+          <h2>Turno</h2>
+         <input type="radio" name="turno" id="Vespertino">
+         <label for="vespertino">Vespertino</label>
+         <input type="radio" name="turno" value="Matutino" id="matutino">
+          <label for="matutino">Matutino</label>  
+          
+          <h2 class="gen">Genero</h2>
+         <input type="radio" name="sexo" value="hombre" id="matutino">
+          <label for="hombre">Hombre</label>  
+         <input type="radio" name="sexo" value="Mujer" id="sexo">
+         <label for="mujer">Mujer</label>
+         </div>
+          </div>
+        
+          <h2 class="col">Colonia donde vives</h2>
+          <div class="box">
+         <select name="colonia" id="colonia">
+          <option value="">Selecciona una colonia</option>
+          <option value="brisas">Las brisas</option>
+          <option value="Molinos">Molinos del rey</option>
+          <option value="presidentes">los presidentes</option>
+         </select>
+        </div>
+        
+          <h2 class="es">Especialidad</h2>
+         <div class="checkbox">
+         <input  type="checkbox"name="especialidad[]" /> <label for="programacion">programacion</label>
+         </div>
+         <div class="checkbox">
+          <input type="checkbox"  name="especialidad[]" /><label for="Electronica"> Electronica</label>
+          </div>
+          <div  class="checkbox">
+         <input type="checkbox" name="especialidad[]" /> <label for="Laboratorio">Laboratorio Clinico</label>
+         </div>
+         <div  class="checkbox">
+         <input type="checkbox" name="especialidad[]" /> <label for="contaduria">Contaduria</label>
+         </div> 
+       
+          <p><input type="reset" value="Borrar todos los datos" /></p>
+          <p><input type="submit" value="Enviar" name="Enviar" /></p>
+    </form>
+    <script src="https://kit.fontawesome.com/a213dfc6d2.js" crossorigin="anonymous"></script>
+  </body>
+</html>
